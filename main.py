@@ -133,7 +133,7 @@ class Calculator:
 def print_banner():
     """Print the calculator banner."""
     print("=" * 60)
-    print("🧮 Command-Line Calculator with Symbolic Differentiation")
+    print("Command-Line Calculator with Symbolic Differentiation")
     print("=" * 60)
     print("Features:")
     print("  • Parse mathematical expressions")
@@ -267,7 +267,7 @@ def interactive_mode():
                     else:
                         try:
                             result = calc.evaluate_expression(expr, temp_vars)
-                            print(f"🔢 {expr} = {result}")
+                            print(f" {expr} = {result}")
                         except ValueError as e:
                             print(f" {e}")
                         continue
@@ -275,7 +275,7 @@ def interactive_mode():
                 # Use current variables
                 try:
                     result = calc.evaluate_expression(expr)
-                    print(f"🔢 {expr} = {result}")
+                    print(f" {expr} = {result}")
                 except ValueError as e:
                     print(f" {e}")
                 continue
@@ -328,12 +328,12 @@ def single_expression_mode(expression: str):
         # Try evaluation if possible
         try:
             result = calc.evaluate_expression(expression)
-            print(f"🔢 {expression} = {result}")
+            print(f" {expression} = {result}")
         except ValueError:
-            print("💡 Expression contains variables - use interactive mode to set values")
+            print(" Expression contains variables - use interactive mode to set values")
     
     except ValueError as e:
-        print(f"❌ {e}")
+        print(f" {e}")
 
 
 def main():
