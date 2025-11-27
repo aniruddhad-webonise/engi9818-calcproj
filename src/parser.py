@@ -6,10 +6,10 @@ It converts the token stream from the tokenizer into expression trees using
 our node classes, handling operator precedence and parentheses correctly.
 
 PROJECT REQUIREMENTS ADDRESSED:
-- ✅ Robust parser (second component: parsing)
-- ✅ Parse mathematical expressions (tokens → expression trees)
-- ✅ Tree-based representation (creates AST using our node classes)
-- ✅ Algorithms for symbolic manipulation (enables differentiation)
+- Robust parser (second component: parsing)
+- Parse mathematical expressions (tokens → expression trees)
+- Tree-based representation (creates AST using our node classes)
+- Algorithms for symbolic manipulation (enables differentiation)
 
 PARSING STRATEGY:
 - Recursive descent parser with operator precedence
