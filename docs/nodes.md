@@ -6,23 +6,23 @@ The `nodes.py` module implements the **tree-based representation** requirement a
 
 ## Project Requirements Addressed
 
-### ✅ Tree-Based Representation
+###  Tree-Based Representation
 - **Abstract Syntax Tree**: Hierarchical data structure for expressions
 - **Node Classes**: Number, Variable, BinaryOp representing different expression types
 - **Tree Structure**: Parent-child relationships with proper encapsulation
 - **Immutable Design**: Safe for symbolic manipulation
 
-### ✅ Algorithms for Symbolic Manipulation
+### Algorithms for Symbolic Manipulation
 - **Differentiation Rules**: Complete calculus rule implementation
 - **Tree Traversal**: Recursive algorithms for evaluation and differentiation
 - **Symbolic Computation**: Returns new trees rather than modifying existing ones
 
-### ✅ Data Structures
+### Data Structures
 - **Expression Trees**: Hierarchical tree structures
 - **Traversal Capabilities**: Methods for visiting and processing tree nodes
 - **Node Relationships**: Proper parent-child connections
 
-### ✅ Symbolic Derivative Computation
+### Symbolic Derivative Computation
 - **Each Node Knows Its Derivative**: Polymorphic differentiation
 - **Calculus Rules**: Sum, product, quotient, power rules implemented
 - **Recursive Application**: Rules applied recursively through tree structure
