@@ -51,9 +51,9 @@ Input String → Tokenizer → Tokens → Parser → Expression Tree → Differe
 - Lookahead token matching
 
 **Project Requirements Addressed**:
-- ✅ **Robust Parser** (second component: syntax analysis)
-- ✅ **Parse Mathematical Expressions** (tokens → expression trees)
-- ✅ **Tree-Based Representation** (creates AST using node classes)
+-  **Robust Parser** (second component: syntax analysis)
+-  **Parse Mathematical Expressions** (tokens → expression trees)
+-  **Tree-Based Representation** (creates AST using node classes)
 
 ### 3. Nodes (`nodes.py`)
 **Phase**: Symbolic Manipulation (Tree Operations)
@@ -71,10 +71,10 @@ Input String → Tokenizer → Tokens → Parser → Expression Tree → Differe
 - Immutable tree construction
 
 **Project Requirements Addressed**:
-- ✅ **Tree-Based Representation** (AST with node classes)
-- ✅ **Algorithms for Symbolic Manipulation** (differentiation rules)
-- ✅ **Data Structures** (expression trees with traversal capabilities)
-- ✅ **Symbolic Derivative Computation** (each node knows its derivative)
+-  **Tree-Based Representation** (AST with node classes)
+-  **Algorithms for Symbolic Manipulation** (differentiation rules)
+-  **Data Structures** (expression trees with traversal capabilities)
+-  **Symbolic Derivative Computation** (each node knows its derivative)
 
 ## Data Flow Analysis
 
