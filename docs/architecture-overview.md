@@ -32,8 +32,8 @@ Input String → Tokenizer → Tokens → Parser → Expression Tree → Differe
 - Operator and parenthesis detection
 
 **Project Requirements Addressed**:
-- ✅ **Robust Parser** (first component: lexical analysis)
-- ✅ **Parse Mathematical Expressions** (tokenization enables parsing)
+-  **Robust Parser** (first component: lexical analysis)
+-  **Parse Mathematical Expressions** (tokenization enables parsing)
 
 ### 2. Parser (`parser.py`)
 **Phase**: Syntax Analysis (Tokens → Expression Tree)
