@@ -6,10 +6,10 @@ from the project specification. It defines the Abstract Syntax Tree (AST) nodes 
 represent mathematical expressions as hierarchical data structures.
 
 PROJECT REQUIREMENTS ADDRESSED:
-- ✅ Tree-based representation of expressions (AST nodes)
-- ✅ Algorithms for symbolic manipulation (differentiation rules)
-- ✅ Data structures (expression trees with traversal capabilities)
-- ✅ Symbolic derivative computation (each node knows its derivative)
+- Tree-based representation of expressions (AST nodes)
+- Algorithms for symbolic manipulation (differentiation rules)
+- Data structures (expression trees with traversal capabilities)
+- Symbolic derivative computation (each node knows its derivative)
 
 ARCHITECTURE OVERVIEW:
 - Abstract base class (Node) defines the interface
