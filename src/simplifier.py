@@ -6,8 +6,8 @@ expressions and make them more readable. It handles common algebraic
 simplifications like combining like terms and eliminating unnecessary operations.
 
 PROJECT REQUIREMENTS ADDRESSED:
-- ✅ Algorithms for symbolic manipulation (simplification algorithms)
-- ✅ Tree traversal (recursive simplification through tree structure)
+- Algorithms for symbolic manipulation (simplification algorithms)
+- Tree traversal (recursive simplification through tree structure)
 
 SIMPLIFICATION RULES:
 - x + 0 = x, x * 1 = x, x * 0 = 0
