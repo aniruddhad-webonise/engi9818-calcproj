@@ -6,8 +6,8 @@ It converts mathematical expression strings into a list of tokens that can
 be processed by the parser to build expression trees.
 
 PROJECT REQUIREMENTS ADDRESSED:
-- ✅ Robust parser (first component: tokenization)
-- ✅ Parse mathematical expressions (tokenization enables parsing)
+- Robust parser (first component: tokenization)
+- Parse mathematical expressions (tokenization enables parsing)
 
 TOKEN TYPES SUPPORTED:
 - NUMBER: Numeric constants (5, 3.14, -2)
