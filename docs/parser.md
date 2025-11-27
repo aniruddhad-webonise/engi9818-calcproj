@@ -6,18 +6,18 @@ The `parser.py` module implements the **second phase of our robust parser** requ
 
 ## Project Requirements Addressed
 
-### ✅ Robust Parser (Second Component)
+### Robust Parser (Second Component)
 - **Syntax Analysis**: Converts tokens into structured expression trees
 - **Operator Precedence**: Implements PEMDAS correctly
 - **Associativity**: Handles left-to-right and right-to-left associativity
 - **Error Handling**: Detects malformed expressions
 
-### ✅ Parse Mathematical Expressions
+### Parse Mathematical Expressions
 - **Token → Tree Conversion**: Transforms token streams into AST
 - **Grammar Implementation**: Implements mathematical expression grammar
 - **Tree Construction**: Creates hierarchical expression representations
 
-### ✅ Tree-Based Representation
+### Tree-Based Representation
 - **AST Creation**: Builds Abstract Syntax Trees using node classes
 - **Hierarchical Structure**: Maintains parent-child relationships
 - **Immutable Design**: Safe for symbolic manipulation
