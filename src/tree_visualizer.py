@@ -5,9 +5,9 @@ This module provides visualization capabilities for expression trees,
 showing the hierarchical structure in a readable text format.
 
 PROJECT REQUIREMENTS ADDRESSED:
-- ✅ Tree-based representation (visualization of AST structure)
-- ✅ Data structures (tree traversal for visualization)
-- ✅ Algorithms for symbolic manipulation (tree display algorithms)
+- Tree-based representation (visualization of AST structure)
+- Data structures (tree traversal for visualization)
+- Algorithms for symbolic manipulation (tree display algorithms)
 
 VISUALIZATION FEATURES:
 - Text-based tree display with ASCII art
