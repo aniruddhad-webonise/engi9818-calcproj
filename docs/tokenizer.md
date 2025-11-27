@@ -6,13 +6,13 @@ The `tokenizer.py` module implements the **first phase of our robust parser** re
 
 ## Project Requirements Addressed
 
-### ✅ Robust Parser (First Component)
+### Robust Parser (First Component)
 - **Lexical Analysis**: Breaks input strings into meaningful tokens
 - **Error Detection**: Identifies invalid characters and malformed numbers
 - **Whitespace Handling**: Properly ignores spaces and tabs
 - **Character-by-Character Processing**: Systematic input analysis
 
-### ✅ Parse Mathematical Expressions
+### Parse Mathematical Expressions
 - **Tokenization Enables Parsing**: Creates the foundation for expression tree construction
 - **Structured Input**: Converts unstructured strings into parseable tokens
 
