@@ -54,11 +54,11 @@ Each component addresses specific requirements from the project specification:
 
 ### Requirements Coverage
 
-- ✅ **Robust Parser**: Tokenizer + Parser modules
-- ✅ **Tree-Based Representation**: Nodes module with AST
-- ✅ **Algorithms for Symbolic Manipulation**: Differentiation rules in Nodes
-- ✅ **Data Structures**: Expression trees with traversal capabilities
-- ✅ **Algorithm Development**: Tree traversal, evaluation, differentiation
+- **Robust Parser**: Tokenizer + Parser modules
+- **Tree-Based Representation**: Nodes module with AST
+- **Algorithms for Symbolic Manipulation**: Differentiation rules in Nodes
+- **Data Structures**: Expression trees with traversal capabilities
+- **Algorithm Development**: Tree traversal, evaluation, differentiation
 
 ## Quick Reference
 
