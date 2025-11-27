@@ -10,12 +10,12 @@ It provides an interactive command-line interface that allows users to:
 - Simplify derivative expressions
 
 PROJECT REQUIREMENTS ADDRESSED:
-- ✅ Command-Line Calculator (interactive CLI interface)
-- ✅ Symbolic Differentiation (complete differentiation pipeline)
-- ✅ Basic Arithmetic (expression evaluation)
-- ✅ Parse Mathematical Expressions (tokenization + parsing)
-- ✅ Tree-based Representation (AST with node classes)
-- ✅ Algorithms for Symbolic Manipulation (differentiation + simplification)
+- Command-Line Calculator (interactive CLI interface)
+- Symbolic Differentiation (complete differentiation pipeline)
+- Basic Arithmetic (expression evaluation)
+- Parse Mathematical Expressions (tokenization + parsing)
+- Tree-based Representation (AST with node classes)
+- Algorithms for Symbolic Manipulation (differentiation + simplification)
 
 USAGE:
     python main.py                    # Interactive mode
@@ -150,14 +150,14 @@ def print_banner():
 
 def print_help():
     """Print help information."""
-    print("\n📖 Calculator Commands:")
+    print("\n Calculator Commands:")
     print("  help, h          - Show this help message")
     print("  quit, q, exit   - Exit the calculator")
     print("  clear           - Clear all variable values")
     print("  vars            - Show current variable values")
     print("  set <var> <val> - Set variable value (e.g., 'set x 5')")
     print()
-    print("📝 Expression Commands:")
+    print(" Expression Commands:")
     print("  diff <expr>                     - Differentiate expression")
     print("  eval <expr>                     - Evaluate expression")
     print("  tree <expr>                     - Show expression tree structure")
@@ -167,7 +167,7 @@ def print_help():
     print("  eval <expr> at x=5               - Evaluate with specific values")
     print("  tree <expr> simple               - Show simple tree view")
     print()
-    print("📚 Examples:")
+    print(" Examples:")
     print("  diff 2*x + 3                    - Differentiate 2x + 3")
     print("  tree (x + 1)^2                  - Show tree for (x + 1)²")
     print("  eval x^2 + y^2 at x=3,y=4       - Evaluate x² + y² at x=3, y=4")
@@ -189,7 +189,7 @@ def interactive_mode():
             
             # Handle commands
             if user_input.lower() in ['quit', 'q', 'exit']:
-                print("👋 Goodbye!")
+                print(" Goodbye!")
                 break
             
             elif user_input.lower() in ['help', 'h']:
@@ -198,17 +198,17 @@ def interactive_mode():
             
             elif user_input.lower() == 'clear':
                 calc.clear_variables()
-                print("✅ Variables cleared")
+                print(" Variables cleared")
                 continue
             
             elif user_input.lower() == 'vars':
                 vars_dict = calc.get_variables()
                 if vars_dict:
-                    print("📊 Current variables:")
+                    print(" Current variables:")
                     for var, val in vars_dict.items():
                         print(f"  {var} = {val}")
                 else:
-                    print("📊 No variables set")
+                    print(" No variables set")
                 continue
             
             elif user_input.startswith('set '):
@@ -218,11 +218,11 @@ def interactive_mode():
                         var_name = parts[1]
                         var_value = float(parts[2])
                         calc.set_variable(var_name, var_value)
-                        print(f"✅ Set {var_name} = {var_value}")
+                        print(f" Set {var_name} = {var_value}")
                     except ValueError:
-                        print("❌ Error: Invalid variable value")
+                        print(" Error: Invalid variable value")
                 else:
-                    print("❌ Usage: set <variable> <value>")
+                    print(" Usage: set <variable> <value>")
                 continue
             
             # Handle differentiation
@@ -241,7 +241,7 @@ def interactive_mode():
                     derivative = calc.parse_and_differentiate(expr, var)
                     print(f"📐 d/d{var}({expr}) = {derivative}")
                 except ValueError as e:
-                    print(f"❌ {e}")
+                    print(f" {e}")
                 continue
             
             # Handle evaluation
@@ -262,14 +262,14 @@ def interactive_mode():
                             try:
                                 temp_vars[var_name.strip()] = float(var_value.strip())
                             except ValueError:
-                                print(f"❌ Error: Invalid value for {var_name.strip()}")
+                                print(f" Error: Invalid value for {var_name.strip()}")
                                 break
                     else:
                         try:
                             result = calc.evaluate_expression(expr, temp_vars)
                             print(f"🔢 {expr} = {result}")
                         except ValueError as e:
-                            print(f"❌ {e}")
+                            print(f" {e}")
                         continue
                 
                 # Use current variables
@@ -277,7 +277,7 @@ def interactive_mode():
                     result = calc.evaluate_expression(expr)
                     print(f"🔢 {expr} = {result}")
                 except ValueError as e:
-                    print(f"❌ {e}")
+                    print(f" {e}")
                 continue
             
             # Handle tree visualization
@@ -292,27 +292,27 @@ def interactive_mode():
                 
                 try:
                     tree_vis = calc.visualize_expression(expr, style)
-                    print(f"🌳 Expression tree for '{expr}':")
+                    print(f" Expression tree for '{expr}':")
                     print(tree_vis)
                 except ValueError as e:
-                    print(f"❌ {e}")
+                    print(f" {e}")
                 continue
             
             # Default: try to evaluate as expression
             else:
                 try:
                     result = calc.evaluate_expression(user_input)
-                    print(f"🔢 {user_input} = {result}")
+                    print(f" {user_input} = {result}")
                 except ValueError as e:
-                    print(f"❌ {e}")
-                    print("💡 Try 'help' for available commands")
+                    print(f" {e}")
+                    print(" Try 'help' for available commands")
                 continue
         
         except KeyboardInterrupt:
-            print("\n👋 Goodbye!")
+            print("\n Goodbye!")
             break
         except EOFError:
-            print("\n👋 Goodbye!")
+            print("\n Goodbye!")
             break
 
 
