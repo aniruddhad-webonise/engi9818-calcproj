@@ -2,18 +2,18 @@
 
 A Python implementation of a command-line calculator that performs basic arithmetic and computes symbolic derivatives of mathematical expressions.
 
-## 🎯 Project Overview
+## Project Overview
 
 This project implements a **Command-Line Calculator with Symbolic Differentiation** that addresses all the core requirements:
 
-- ✅ **Robust Parser**: Tokenization + recursive descent parsing
-- ✅ **Tree-Based Representation**: Abstract Syntax Tree (AST) with node classes
-- ✅ **Symbolic Differentiation**: Complete calculus rules implementation
-- ✅ **Algorithms for Symbolic Manipulation**: Differentiation + simplification
-- ✅ **Data Structures**: Expression trees with traversal capabilities
-- ✅ **Command-Line Interface**: Interactive and single-expression modes
+- **Robust Parser**: Tokenization + recursive descent parsing
+- **Tree-Based Representation**: Abstract Syntax Tree (AST) with node classes
+- **Symbolic Differentiation**: Complete calculus rules implementation
+- **Algorithms for Symbolic Manipulation**: Differentiation + simplification
+- **Data Structures**: Expression trees with traversal capabilities
+- **Command-Line Interface**: Interactive and single-expression modes
 
-## 🚀 Features
+## Features
 
 ### Core Functionality
 - **Parse Mathematical Expressions**: Convert strings to expression trees
@@ -37,7 +37,7 @@ This project implements a **Command-Line Calculator with Symbolic Differentiatio
 - **Quotient Rule**: `d/dx(f/g) = (f'*g - f*g') / g^2`
 - **Power Rule**: `d/dx(f^n) = n * f^(n-1) * f'`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 proj_calc/
@@ -53,7 +53,7 @@ proj_calc/
 └── tests/                 # Test files (future)
 ```
 
-## 🛠️ Installation & Usage
+## Installation & Usage
 
 ### Prerequisites
 - Python 3.7+
@@ -96,37 +96,37 @@ python main.py "(x + 1)^2"
 ### Symbolic Differentiation
 ```
 calc> diff 2*x + 3
-📐 d/dx(2*x + 3) = 2.0
+d/dx(2*x + 3) = 2.0
 
 calc> diff x^3 - 2*x
-📐 d/dx(x^3 - 2*x) = (3.0 * (x ^ 2.0)) - 2.0
+d/dx(x^3 - 2*x) = (3.0 * (x ^ 2.0)) - 2.0
 
 calc> diff (x + 1)^2
-📐 d/dx((x + 1)^2) = 2.0 * (x + 1.0)
+d/dx((x + 1)^2) = 2.0 * (x + 1.0)
 ```
 
 ### Expression Evaluation
 ```
 calc> set x 5
-✅ Set x = 5.0
+Set x = 5.0
 
 calc> eval x^2 + 2*x + 1
-🔢 x^2 + 2*x + 1 = 36.0
+x^2 + 2*x + 1 = 36.0
 
 calc> eval x^2 + y^2 at y=3
-🔢 x^2 + y^2 = 34.0
+x^2 + y^2 = 34.0
 ```
 
 ### Advanced Differentiation
 ```
 calc> diff x^2 + y^2 wrt y
-📐 d/dy(x^2 + y^2) = (0 + (2.0 * y))
+d/dy(x^2 + y^2) = (0 + (2.0 * y))
 ```
 
 ### Tree Visualization
 ```
 calc> tree 2*x + 3
-🌳 Expression tree for '2*x + 3':
+Expression tree for '2*x + 3':
                                       '+'                                       
                                ┌──────────────┐                                 
                                 '*'   Number(3.0)                               
@@ -134,11 +134,11 @@ calc> tree 2*x + 3
                             Number(2.0) Variable(x)                             
 
 calc> tree (x + 1)^2 simple
-🌳 Expression tree for '(x + 1)^2':
+Expression tree for '(x + 1)^2':
 ((x + 1.0) ^ 2.0)
 ```
 
-## 🧪 Testing
+## Testing
 
 Run individual component tests:
 ```bash
@@ -153,7 +153,7 @@ Test the complete module:
 python -c "import src; print(src.get_module_info())"
 ```
 
-## 🏗️ Architecture
+## Architecture
 
 ### Design Patterns
 - **Visitor Pattern**: Tree traversal for evaluation and differentiation
@@ -176,7 +176,7 @@ String → Tokenizer → Tokens → Parser → AST → Differentiator → Simpli
                             Tree Visualizer → ASCII Art
 ```
 
-## 🔬 Technical Details
+## Technical Details
 
 ### Module Structure
 The `src/` module provides a comprehensive API with:
@@ -197,7 +197,7 @@ The `src/` module provides a comprehensive API with:
 - Undefined variables during evaluation
 - Division by zero detection
 
-## 🎓 Educational Value
+## Educational Value
 
 This project demonstrates:
 - **Compiler Design**: Lexical analysis and parsing
@@ -206,7 +206,7 @@ This project demonstrates:
 - **Software Architecture**: Modular design and separation of concerns
 - **Mathematical Concepts**: Calculus and symbolic computation
 
-## 🚧 Future Enhancements
+## Future Enhancements
 
 - Trigonometric functions (`sin`, `cos`, `tan`)
 - Logarithmic functions (`ln`, `log`)
@@ -217,6 +217,6 @@ This project demonstrates:
 - Interactive tree editing
 - Export to LaTeX format
 
-## 📄 License
+## License
 
 This project is for educational purposes and demonstrates the implementation of a symbolic differentiation calculator.
